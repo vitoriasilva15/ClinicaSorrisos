@@ -102,7 +102,10 @@ class Clinica_Sorrisos:
         return False
 
     #procurar e exibir funcionario
-
+    def exibir_funcionario(self, login, senha):
+        for funcionario in self.funcionarios:
+            if login == funcionario.login and senha == funcionario.senha:
+                return funcionario
 
     #procurar e exibir paciente
    
